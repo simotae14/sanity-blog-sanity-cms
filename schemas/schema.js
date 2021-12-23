@@ -55,6 +55,14 @@ export default createSchema({
           type: 'datetime'
         },
         {
+          name: 'author',
+          title: 'Author',
+          type: 'reference',
+          to: [{
+            type: 'author'
+          }]
+        },
+        {
           name: 'slug',
           type: 'slug',
           title: 'Slug'
