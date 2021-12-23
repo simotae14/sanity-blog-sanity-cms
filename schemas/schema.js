@@ -13,6 +13,23 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     {
+      name: 'author',
+      type: 'document',
+      title: 'Author',
+      fields: [
+        {
+          name: 'name',
+          title: 'Name',
+          type: 'string'
+        },
+        {
+          name: 'avatar',
+          title: 'Avatar',
+          type: 'image'
+        }
+      ]
+    },
+    {
       name: 'blog',
       type: 'document',
       title: 'Blog',
