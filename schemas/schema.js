@@ -47,7 +47,14 @@ export default createSchema({
         {
           name: 'coverImage',
           title: 'Cover Image',
-          type: 'image'
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Description'
+            }
+          ]
         },
         {
           name: 'content',
