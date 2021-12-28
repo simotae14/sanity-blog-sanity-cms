@@ -72,6 +72,12 @@ export default createSchema({
               options: {
                 hotspot: true
               }
+            },
+            {
+              type: 'code',
+              options: {
+                withFilename: true
+              }
             }
           ]
         },
